@@ -120,6 +120,12 @@ function GetALLProduct() {
           >
             Products
           </button>
+          <button
+            className={`sidebar-btn ${active === "orders" ? "active" : ""}`}
+            onClick={() => navigate("/admin/orders")}
+          >
+            Orders
+          </button>
           <button className="sidebar-btn logout-btn" onClick={handleLogout}>
             Logout
           </button>
